@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="2dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="209dp"
+        android:layout_height="174dp"
+        app:cardCornerRadius="17dp">
+        <ImageView
+            android:id="@+id/card_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/card_img_3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="14dp"
+            android:padding="10dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/card_glass_bg">
+
+            <TextView
+                android:id="@+id/match_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Match name"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp"
+                android:textColor="@color/purpleDark"/>
+
+            <TextView
+                android:id="@+id/match_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/match_name"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="4dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Taroudant"
+                android:textColor="@color/grayDark"
+                android:textSize="12sp"
+                app:drawableLeftCompat="@drawable/ic_subtract" />
+
+            <Button
+                android:id="@+id/detail_btn"
+                android:layout_width="59dp"
+                android:layout_height="29dp"
+                android:text="Detail"
+                style="@style/white_btn"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -8,5 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="purpleLight">#6F35A5</color>
+    <color name="purpleDark">#2F0059</color>
+    <color name="grayDark">#3A3A3A</color>
+    <color name="grayLight">#EBE6F7</color>
     <color name="ic_launcher_background">#2F0059</color>
 </resources>

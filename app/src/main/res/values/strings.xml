@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">iPlay Soccer</string>
+    <string name="password">Your password</string>
+    <string name="email">Your email</string>
+    <string name="login_btn">SIGN IN</string>
+    <string name="signup">SIGN UP</string>
+    <string name="signup_caption">Dont have an account ?</string>
+    <string name="login_caption">Enter the following information\nso we can identify you.</string>
+    <string name="forget_password">Forget password ?</string>
+    <string name="welcome_to">welcome to</string>
+
+    <string-array name="match_names">
+        <item>Match name</item>
+        <item>Match name</item>
+        <item>Match name</item>
+        <item>Match name</item>
+    </string-array>
+
+    <string-array name="match_location">
+        <item>Taroudant</item>
+        <item>Agadir</item>
+        <item>Marrakech</item>
+        <item>Taroudant</item>
+    </string-array>
+
+    <array name="match_imgs">
+        <item>@drawable/card_img_1</item>
+        <item>@drawable/card_img_2</item>
+        <item>@drawable/card_img_3</item>
+        <item>@drawable/card_img_4</item>
+    </array>
+
 </resources>
