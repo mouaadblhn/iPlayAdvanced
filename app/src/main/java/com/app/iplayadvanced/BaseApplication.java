@@ -3,9 +3,8 @@ package com.app.iplayadvanced;
 import android.app.Application;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
-import android.widget.ArrayAdapter;
 
-import com.app.iplayadvanced.models.Match;
+import com.app.iplayadvanced.model.Match;
 
 import java.util.ArrayList;
 
@@ -51,9 +50,9 @@ public class BaseApplication extends Application {
         final String[] match_names = getResources().getStringArray(R.array.match_names);
         final String[] match_location = getResources().getStringArray(R.array.match_location);
         TypedArray match_imgs = getResources().obtainTypedArray(R.array.match_imgs);
-
+        final String[] match_distance = getResources().getStringArray(R.array.match_distance);
         for(int i=0; i<match_names.length; i++) {
-            nearestMatches.add(new Match(match_names[i], match_location[i], match_imgs.getResourceId(i,0)));
+            nearestMatches.add(new Match(match_names[i], match_location[i]+", "+match_distance[i], match_imgs.getResourceId(i,0)));
         }
         return nearestMatches;
     }

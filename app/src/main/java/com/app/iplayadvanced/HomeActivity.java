@@ -6,16 +6,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.widget.Adapter;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
 import com.app.iplayadvanced.adapter.NearestMatchesAdapter;
 import com.app.iplayadvanced.adapter.RecommendedMatchAdapter;
-import com.app.iplayadvanced.models.Match;
+import com.app.iplayadvanced.model.Match;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
     protected ArrayList<Match> recommendedMatches, nearestMatches;

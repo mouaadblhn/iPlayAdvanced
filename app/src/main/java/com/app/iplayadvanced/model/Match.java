@@ -1,4 +1,4 @@
-package com.app.iplayadvanced.models;
+package com.app.iplayadvanced.model;
 
 import com.app.iplayadvanced.R;
 

@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="84dp"
-    android:layout_margin="4dp"
-    android:paddingHorizontal="8dp">
+    android:layout_margin="4dp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="66dp"
@@ -30,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            android:paddingHorizontal="20dp">
+            android:paddingHorizontal="10dp">
 
             <TextView
                 android:id="@+id/nearest_name"
@@ -38,7 +37,8 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_medium"
                 android:textColor="@color/purpleDark"
-                android:textSize="14sp" />
+                android:text="test"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/nearest_location"
@@ -47,16 +47,18 @@
                 android:layout_below="@id/nearest_name"
                 android:layout_marginTop="2dp"
                 android:drawablePadding="4dp"
+                android:text="test"
                 android:fontFamily="@font/poppins_medium"
                 android:textColor="@color/grayDark"
-                android:textSize="12sp"/>
+                android:alpha="0.6"
+                android:textSize="14sp"/>
         </RelativeLayout>
 
         <Button
             android:id="@+id/detail_btn"
             style="@style/gray_btn"
             android:layout_width="77dp"
-            android:layout_height="32dp"
+            android:layout_height="37dp"
             android:text="@string/detail_btn" />
     </LinearLayout>
 </LinearLayout>

@@ -24,6 +24,13 @@
         <item>Taroudant</item>
     </string-array>
 
+    <string-array name="match_distance">
+        <item>1.6 mi</item>
+        <item>2.3 mi</item>
+        <item>7.9 mi</item>
+        <item>5.4 mi</item>
+    </string-array>
+
     <array name="match_imgs">
         <item>@drawable/card_img_1</item>
         <item>@drawable/card_img_2</item>

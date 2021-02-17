@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.iplayadvanced.R;
-import com.app.iplayadvanced.models.Match;
+import com.app.iplayadvanced.model.Match;
 
 import java.util.ArrayList;
 
