@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/bg_search_field"
+        android:drawableEnd="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_vertical"
+        android:hint="@string/search_tag"
+        android:paddingHorizontal="15dp"
+        android:singleLine="true"
+        android:textColor="@color/grayDark"
+        android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_box">
+
+            <TextView
+                android:id="@+id/rcmnd_for_you"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/recommended_for_you"
+                android:textColor="@color/purpleDark"
+                android:textSize="18sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/horizontal_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/rcmnd_for_you"/>
+
+            <TextView
+                android:id="@+id/nearest_match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_below="@id/horizontal_list"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/nearest_matches"
+                android:textColor="@color/purpleDark"
+                android:textSize="18sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/vertical_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/nearest_match"/>
+
+        </RelativeLayout>
+
+</RelativeLayout>

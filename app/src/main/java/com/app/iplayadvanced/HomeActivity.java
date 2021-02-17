@@ -1,15 +1,23 @@
 package com.app.iplayadvanced;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import com.app.iplayadvanced.adapter.NearestMatchesAdapter;
 import com.app.iplayadvanced.adapter.RecommendedMatchAdapter;
+import com.app.iplayadvanced.fragment.ChatFragment;
+import com.app.iplayadvanced.fragment.HomeFragment;
+import com.app.iplayadvanced.fragment.SettingsFragment;
+import com.app.iplayadvanced.fragment.TeamFragment;
 import com.app.iplayadvanced.model.Match;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 
@@ -23,6 +31,12 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_nav_menu);
+        bottomNav.setOnNavigationItemSelectedListener(navListener);
+        // Default start fragment.
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+
+        /*
         rv1 = findViewById(R.id.horizontal_list);
         LinearLayoutManager layoutManager= new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false);
         rv1.setLayoutManager(layoutManager);
@@ -46,6 +60,29 @@ public class HomeActivity extends AppCompatActivity {
         adapterNearest = new NearestMatchesAdapter(context,nearestMatches);
 
         rv2.setAdapter(adapterNearest);
-
+*/
     }
+
+    private BottomNavigationView.OnNavigationItemSelectedListener navListener =
+            new BottomNavigationView.OnNavigationItemSelectedListener() {
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                    Fragment selectedFragment = null;
+
+                    switch (item.getItemId()) {
+                        case R.id.m_home : selectedFragment = new HomeFragment();
+                            break;
+                        case R.id.m_chat: selectedFragment = new ChatFragment();
+                            break;
+                        case R.id.m_team: selectedFragment = new TeamFragment();
+                            break;
+                        case R.id.m_settings: selectedFragment = new SettingsFragment();
+                            break;
+                    }
+
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
+                    return true;
+                }
+            };
+
 }

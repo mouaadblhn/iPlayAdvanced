@@ -16,6 +16,9 @@
     <string name="nearest_matches">Nearest Matches</string>
     <string name="recommended_for_you">Recommended For You</string>
     <string name="search_tag">search for matches ..</string>
+    <string name="stay_tuned">stay tuned</string>
+    <string name="stay_tuned_caption">We are still working on it !\nThank you for being patient ..</string>
+    <string name="copyright">Developed By MouaadBlhn</string>
 
     <string-array name="match_names">
         <item>Match name</item>
