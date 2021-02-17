@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/card_img_3" />
+            android:src="@drawable/card_round_corners" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -30,7 +30,6 @@
                 android:id="@+id/match_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Match name"
                 android:fontFamily="@font/poppins_medium"
                 android:textSize="14sp"
                 android:textColor="@color/purpleDark"/>
@@ -43,7 +42,6 @@
                 android:layout_marginTop="2dp"
                 android:drawablePadding="4dp"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Taroudant"
                 android:textColor="@color/grayDark"
                 android:textSize="12sp"
                 app:drawableLeftCompat="@drawable/ic_subtract" />
@@ -52,7 +50,7 @@
                 android:id="@+id/detail_btn"
                 android:layout_width="59dp"
                 android:layout_height="29dp"
-                android:text="Detail"
+                android:text="@string/detail_btn"
                 style="@style/white_btn"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"/>

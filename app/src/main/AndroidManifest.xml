@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IPlayAdvanced">
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity"/>
         <activity android:name=".HomeActivity" />
         <activity android:name=".LauncherActivity">
             <intent-filter>
