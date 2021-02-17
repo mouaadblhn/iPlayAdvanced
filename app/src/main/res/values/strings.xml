@@ -9,8 +9,18 @@
     <string name="forget_password">Forget password ?</string>
     <string name="welcome_to">welcome to</string>
     <string name="detail_btn">Detail</string>
+    <string name="home">Home</string>
+    <string name="chat">Chat</string>
+    <string name="team">Team</string>
+    <string name="menu">Menu</string>
+    <string name="nearest_matches">Nearest Matches</string>
+    <string name="recommended_for_you">Recommended For You</string>
+    <string name="search_tag">search for matches ..</string>
 
     <string-array name="match_names">
+        <item>Match name</item>
+        <item>Match name</item>
+        <item>Match name</item>
         <item>Match name</item>
         <item>Match name</item>
         <item>Match name</item>
@@ -22,6 +32,9 @@
         <item>Agadir</item>
         <item>Marrakech</item>
         <item>Taroudant</item>
+        <item>Some place here</item>
+        <item>Example</item>
+        <item>Drarga</item>
     </string-array>
 
     <string-array name="match_distance">
@@ -29,6 +42,9 @@
         <item>2.3 mi</item>
         <item>7.9 mi</item>
         <item>5.4 mi</item>
+        <item>1.1 mi</item>
+        <item>2.9 mi</item>
+        <item>0.5 mi</item>
     </string-array>
 
     <array name="match_imgs">
@@ -36,6 +52,9 @@
         <item>@drawable/card_img_2</item>
         <item>@drawable/card_img_3</item>
         <item>@drawable/card_img_4</item>
+        <item>@drawable/card_img_5</item>
+        <item>@drawable/card_img_6</item>
+        <item>@drawable/card_img_7</item>
     </array>
 
 </resources>

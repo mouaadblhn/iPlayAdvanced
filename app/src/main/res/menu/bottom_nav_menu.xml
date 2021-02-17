@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/m_home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home" />
+
+    <item
+        android:id="@+id/m_chat"
+        android:title="@string/chat"
+        android:icon="@drawable/ic_message_circle" />
+    <item
+        android:id="@+id/m_team"
+        android:title="@string/team"
+        android:icon="@drawable/ic_users" />
+    <item
+        android:id="@+id/m_settings"
+        android:title="@string/menu"
+        android:icon="@drawable/ic_grid" />
+</menu>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     <style name="white_btn">
         <item name="android:textSize">12sp</item>
         <item name="android:background">@drawable/btn_white_rounded</item>
@@ -19,4 +19,12 @@
         <item name="android:fontFamily">@font/poppins_medium</item>
         <item name="android:drawableEnd">@drawable/ic_next</item>
     </style>
+
+
+    <style name="BottomNavigationViewTextStyle">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+
 </resources>
